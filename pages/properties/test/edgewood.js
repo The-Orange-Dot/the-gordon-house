@@ -1,24 +1,24 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import thumbnail from "../../images/EDGEWOOD/edgewood-main.jpg";
 import styles from "../../styles/property.module.css";
-import images from "../../images/EDGEWOOD/edgewood";
+import images from "../../images/default";
 
 const EdgeWood = () => {
   const [properties, setProperties] = useState({
     name: "",
-    images: [],
+    images: images,
   });
   const [selector, setSelector] = useState("details");
-  const [picture, setPicture] = useState(images[0]);
-
-  const fetchProps = async () => {
-    const res = await fetch("../api/");
-    const data = await res.json();
-    setProperties(data[0]);
-  };
+  const [picture, setPicture] = useState(properties.images[0]);
 
   useEffect(() => {
+    const fetchProps = async () => {
+      const res = await fetch("../api/");
+      const data = await res.json();
+      setProperties(data[0]);
+      setPicture(data[0].images[0]);
+    };
+
     fetchProps();
   }, []);
 
@@ -33,7 +33,7 @@ const EdgeWood = () => {
             <Image src={picture} alt={properties.name} />
           </div>
           <div className={styles.imagePreview}>
-            {images.map((image) => {
+            {properties.images.map((image) => {
               return (
                 <Image
                   key={image.src}
@@ -133,20 +133,22 @@ const EdgeWood = () => {
         ) : null}
 
         {selector === "contact" ? (
-          <div className={styles.contactContainer}>
-            <div className={styles.gregImage}>
-              <Image
-                src={require("../../images/greg.jpeg")}
-                alt="Greg Gordon"
-              />
-            </div>
-            <div>
-              <h3>Greg Gordon</h3>
-              <h4>P.O BOX 1188</h4>
-              <h4>EAST HAMPTON, NY</h4>
-              <h4>11937</h4>
-              <p>PH: 631-329-0111</p>
-              <p>gregorygordon495 @gmail.com</p>
+          <div className={styles.detailsContainer}>
+            <div className={styles.contactContainer}>
+              <div className={styles.gregImage}>
+                <Image
+                  src={require("../../images/greg.jpeg")}
+                  alt="Greg Gordon"
+                />
+              </div>
+              <div>
+                <h3>Greg Gordon</h3>
+                <h4>P.O BOX 1188</h4>
+                <h4>EAST HAMPTON, NY</h4>
+                <h4>11937</h4>
+                <p>PH: 631-329-0111</p>
+                <p>gregorygordon495 @gmail.com</p>
+              </div>
             </div>
           </div>
         ) : null}

@@ -15,7 +15,7 @@ const PropertyNavigation = () => {
         {/* EDGEWOOD */}
         <div className={styles.property}>
           <h3>Edgewood</h3>
-          <Link href={"/properties/edgewood"} passHref={true}>
+          <Link href={"/edgewood"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -36,7 +36,7 @@ const PropertyNavigation = () => {
         {/* Sag Harbor Village */}
         <div className={styles.property}>
           <h3>Sag Harbor Village</h3>
-          <Link href={"/properties/sag-harbor-village"} passHref={true}>
+          <Link href={"/sag-harbor-village"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -57,7 +57,7 @@ const PropertyNavigation = () => {
         {/* Stephen Hands */}
         <div className={styles.property}>
           <h3>Stephen Hands</h3>
-          <Link href={"/properties/stephen-hands"} passHref={true}>
+          <Link href={"/stephen-hands"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -78,7 +78,7 @@ const PropertyNavigation = () => {
         {/* Rosehill */}
         <div className={styles.property}>
           <h3>Rosehill</h3>
-          <Link href={"/properties/rosehill"} passHref={true}>
+          <Link href={"/rosehill"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -99,7 +99,7 @@ const PropertyNavigation = () => {
         {/* Elywood */}
         <div className={styles.property}>
           <h3>ElyWood</h3>
-          <Link href={"/properties/elybrook"} passHref={true}>
+          <Link href={"/elybrook"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -120,7 +120,7 @@ const PropertyNavigation = () => {
         {/* Copeces */}
         <div className={styles.property}>
           <h3>116 Copeces</h3>
-          <Link href={"/properties/copeces"} passHref={true}>
+          <Link href={"/copeces"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -143,7 +143,7 @@ const PropertyNavigation = () => {
       <div className={styles.locationContainer}>
         <div className={styles.property}>
           <h3>Rockville</h3>
-          <Link href={"/properties/rockville"} passHref={true}>
+          <Link href={"/rockville"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -161,7 +161,7 @@ const PropertyNavigation = () => {
       <div className={styles.locationContainer}>
         <div className={styles.property}>
           <h3>Antigua</h3>
-          <Link href={"/properties/antigua"} passHref={true}>
+          <Link href={"/antigua"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image

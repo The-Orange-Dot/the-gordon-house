@@ -120,7 +120,7 @@ const PropertyNavigation = () => {
         {/* Copeces */}
         <div className={styles.property}>
           <h3>116 Copeces</h3>
-          <Link href={"/properties/copeces"} passHref={true}>
+          <Link href={"/properties/116-copeces"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image

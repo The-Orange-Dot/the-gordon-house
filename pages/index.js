@@ -27,7 +27,7 @@ export default function Home() {
           </MediaQuery>
         </div>
         <div>
-          <MediaQuery minWidth={450}>
+          <MediaQuery minWidth={450} maxWidth={899}>
             <PropertyNavigationTablet />
           </MediaQuery>
         </div>
