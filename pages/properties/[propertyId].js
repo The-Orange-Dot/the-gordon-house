@@ -46,6 +46,7 @@ const PropertyId = () => {
           </div>
           <div className={styles.imagePreview}>
             {properties.images.map((image) => {
+              console.log(image);
               return (
                 <Image
                   key={image.src}
@@ -53,7 +54,6 @@ const PropertyId = () => {
                   alt="image"
                   width={40}
                   height={40}
-                  objectFit="cover"
                   onClick={() => {
                     setPicture(image);
                   }}
