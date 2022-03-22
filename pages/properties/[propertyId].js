@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/property.module.css";
-import images from "../../images/default";
+import images from "/public/images/default";
 import { useRouter } from "next/router";
 
 const PropertyId = () => {
@@ -13,6 +13,8 @@ const PropertyId = () => {
   const [selector, setSelector] = useState("details");
   const [picture, setPicture] = useState(properties.images[0]);
   const router = useRouter();
+
+  const imageTest = properties.images[0];
 
   useEffect(() => {
     const fetchProps = async () => {
@@ -35,7 +37,12 @@ const PropertyId = () => {
         </h1>
         <div className={styles.imageContainer}>
           <div className={styles.imageDisplay}>
-            <Image src={picture} alt={properties.name} />
+            <Image
+              src={picture}
+              alt={properties.name}
+              width={550}
+              height={297}
+            />
           </div>
           <div className={styles.imagePreview}>
             {properties.images.map((image) => {
