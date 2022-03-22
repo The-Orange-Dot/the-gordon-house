@@ -123,7 +123,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
+  height: 270px;
   width: 100%;
   overflow-y: scroll;
   padding: 0 0 5% 0;
@@ -168,4 +168,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.imagePreviewContainer {
+  min-width: 40px;
+  min-height: 40px;
 }

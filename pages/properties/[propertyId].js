@@ -196,16 +196,20 @@ const PropertyId = () => {
                   <div className={styles.imagePreviewMobile}>
                     {properties.images.map((image) => {
                       return (
-                        <Image
+                        <span
                           key={image.src}
-                          src={image}
-                          alt="image"
-                          width={40}
-                          height={40}
-                          onClick={() => {
-                            setPicture(image);
-                          }}
-                        />
+                          className={styles.imagePreviewContainer}
+                        >
+                          <Image
+                            src={image}
+                            alt="image"
+                            width={40}
+                            height={40}
+                            onClick={() => {
+                              setPicture(image);
+                            }}
+                          />
+                        </span>
                       );
                     })}
                   </div>
