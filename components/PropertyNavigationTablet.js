@@ -15,7 +15,7 @@ const PropertyNavigation = () => {
         {/* EDGEWOOD */}
         <div className={styles.property}>
           <h3>Edgewood</h3>
-          <Link href={"/edgewood"} passHref={true}>
+          <Link href={"/properties/edgewood"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -25,8 +25,9 @@ const PropertyNavigation = () => {
               </div>
               <div className={styles.textContainer}>
                 <p>
-                  4 BEDROOMS, 3 ½ BATHS, HEATED GUNITE POOL & SPA, A.C, FULLY
-                  FURNISHED
+                  {
+                    "4 BEDROOMS, 3 ½ BATHS, HEATED GUNITE POOL & SPA, A.C, FULLY FURNISHED"
+                  }
                 </p>
               </div>
             </div>
@@ -36,7 +37,7 @@ const PropertyNavigation = () => {
         {/* Sag Harbor Village */}
         <div className={styles.property}>
           <h3>Sag Harbor Village</h3>
-          <Link href={"/sag-harbor-village"} passHref={true}>
+          <Link href={"/properties/sag-harbor-village"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -46,8 +47,9 @@ const PropertyNavigation = () => {
               </div>
               <div className={styles.textContainer}>
                 <p>
-                  4 BEDROOMS, 3 ½ BATHS, HEATED GUNITE POOL & SPA, A.C, FULLY
-                  FURNISHED
+                  {
+                    "4 BEDROOMS, 3 ½ BATHS, HEATED GUNITE POOL & SPA, A.C, FULLY FURNISHED"
+                  }
                 </p>
               </div>
             </div>
@@ -57,7 +59,7 @@ const PropertyNavigation = () => {
         {/* Stephen Hands */}
         <div className={styles.property}>
           <h3>Stephen Hands</h3>
-          <Link href={"/stephen-hands"} passHref={true}>
+          <Link href={"/properties/stephen-hands"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -67,8 +69,9 @@ const PropertyNavigation = () => {
               </div>
               <div className={styles.textContainer}>
                 <p>
-                  3 BEDROOMS, 2 BATHS, OIL HEAT, UNFURNISHED, ALL APPLIANCES,
-                  20'X40' HEATED VINYL POOL
+                  {
+                    "3 BEDROOMS, 2 BATHS, OIL HEAT, UNFURNISHED, ALL APPLIANCES, 20'X40' HEATED VINYL POOL"
+                  }
                 </p>
               </div>
             </div>
@@ -78,7 +81,7 @@ const PropertyNavigation = () => {
         {/* Rosehill */}
         <div className={styles.property}>
           <h3>Rosehill</h3>
-          <Link href={"/rosehill"} passHref={true}>
+          <Link href={"/properties/rosehill"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -88,18 +91,19 @@ const PropertyNavigation = () => {
               </div>
               <div className={styles.textContainer}>
                 <p>
-                  3 BEDROOMS, 2 BATHS, OIL HEAT, UNFURNISHED, ALL APPLIANCES,
-                  20'X40' HEATED VINYL POOL
+                  {
+                    " 3 BEDROOMS, 2 BATHS, OIL HEAT, UNFURNISHED, ALL APPLIANCES, 20'X40' HEATED VINYL POOL"
+                  }
                 </p>
               </div>
             </div>
           </Link>
         </div>
 
-        {/* Elywood */}
+        {/* Elybrook */}
         <div className={styles.property}>
-          <h3>ElyWood</h3>
-          <Link href={"/elybrook"} passHref={true}>
+          <h3>Elybrook</h3>
+          <Link href={"/properties/elybrook"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -109,8 +113,9 @@ const PropertyNavigation = () => {
               </div>
               <div className={styles.textContainer}>
                 <p>
-                  4 BEDROOMS, 3½ BATHS, 18'x44' HEATED GUNITE POOL & SPA A.C.,
-                  OIL HEAT, FULLY FURNISHED
+                  {
+                    "4 BEDROOMS, 3½ BATHS, 18'x44' HEATED GUNITE POOL & SPA A.C., OIL HEAT, FULLY FURNISHED"
+                  }
                 </p>
               </div>
             </div>
@@ -120,7 +125,7 @@ const PropertyNavigation = () => {
         {/* Copeces */}
         <div className={styles.property}>
           <h3>116 Copeces</h3>
-          <Link href={"/copeces"} passHref={true}>
+          <Link href={"/properties/116-copeces"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -130,8 +135,9 @@ const PropertyNavigation = () => {
               </div>
               <div className={styles.textContainer}>
                 <p>
-                  2 BEDROOMS, 1 BATH, VINYL POOL, ALL APPLIANCES, OIL HEAT,
-                  UNFURNISHED
+                  {
+                    "2 BEDROOMS, 1 BATH, VINYL POOL, ALL APPLIANCES, OIL HEAT, UNFURNISHED"
+                  }
                 </p>
               </div>
             </div>
@@ -143,7 +149,7 @@ const PropertyNavigation = () => {
       <div className={styles.locationContainer}>
         <div className={styles.property}>
           <h3>Rockville</h3>
-          <Link href={"/rockville"} passHref={true}>
+          <Link href={"/properties/rockville"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -151,7 +157,7 @@ const PropertyNavigation = () => {
                   alt="rockville main"
                 />
               </div>
-              <p>800 sq. ft. 1 Bedroom, 1 Bath Apartments</p>
+              <p>{"800 sq. ft. 1 Bedroom, 1 Bath Apartments"}</p>
             </div>
           </Link>
         </div>
@@ -161,7 +167,7 @@ const PropertyNavigation = () => {
       <div className={styles.locationContainer}>
         <div className={styles.property}>
           <h3>Antigua</h3>
-          <Link href={"/antigua"} passHref={true}>
+          <Link href={"/properties/antigua"} passHref={true}>
             <div className={styles.propertyCardContainer}>
               <div className={styles.image}>
                 <Image
@@ -169,7 +175,7 @@ const PropertyNavigation = () => {
                   alt="antigua main"
                 />
               </div>
-              <p>4 BEDROOM, 3 BATHROOM VILLA (More info needed)</p>
+              <p>{"4 BEDROOM, 3 BATHROOM VILLA (More info needed)"}</p>
             </div>
           </Link>
         </div>
