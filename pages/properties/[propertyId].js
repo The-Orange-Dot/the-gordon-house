@@ -18,7 +18,7 @@ const PropertyId = () => {
 
   useEffect(() => {
     const fetchProps = async () => {
-      const res = await fetch(`../api/${router.query.propertyId}`);
+      const res = await fetch(`/api/${router.query.propertyId}`);
       const data = await res.json();
       setProperties(data);
       setPicture(data.images[0]);
@@ -42,11 +42,11 @@ const PropertyId = () => {
               alt={properties.name}
               width={550}
               height={297}
+              priority
             />
           </div>
           <div className={styles.imagePreview}>
             {properties.images.map((image) => {
-              console.log(image);
               return (
                 <Image
                   key={image.src}
