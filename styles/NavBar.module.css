@@ -1,0 +1,18 @@
+.navBarContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.navLinkContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navLinkContainer p {
+  margin: 0 5%;
+}
+
+.link {
+  cursor: pointer;
+}

@@ -1,0 +1,81 @@
+.propertyPageContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5%;
+}
+
+.propertyInfoContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageDisplay {
+  display: flex;
+  justify-content: center;
+  min-width: 90%;
+  height: 80%;
+  max-width: 90%;
+  object-fit: cover;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.imagePreview {
+  cursor: pointer;
+}
+
+.selector {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 65%;
+  overflow-y: scroll;
+  padding: 0 0 5% 0;
+}
+
+.selected {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.unselected {
+  cursor: pointer;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gregImage {
+  height: 100%;
+  width: 25%;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
